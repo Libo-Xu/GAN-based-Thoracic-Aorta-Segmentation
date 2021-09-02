@@ -7,7 +7,7 @@
 ### Baseline:<br />
 U-net was trained on 40 NCE CT images and its segmentation labels.<br /> 
 ### Tow-stage training:<br />
-At 1st stage, CycleGAN was trained on 40 NCE CT images and 20 CTA images. At 2nd stage, the trained CylceGAN translated the CTA images to NCE CT images, than a U-net was trained on 40 NCE CT images. (set *use_end2end_training = False* in CycleGAN.py) <br />
+At the 1st stage, CycleGAN was trained on 40 NCE CT images and 20 CTA images. At the 2nd stage, the trained CylceGAN translated the CTA images to NCE CT images, then a U-net was trained on 40 NCE CT images. (set *use_end2end_training = False* in CycleGAN.py) <br />
 ### Hybrid network (one-stage training):<br />
 Added the U-net in the CycleGAN framework and implemented end-to-end training on 40 NCE CT images and 20 CTA images. (set *use_end2end_training = True* in CycleGAN.py )<br />
   
